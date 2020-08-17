@@ -4,7 +4,7 @@ We are happy to announce the release of Phish2MISP a small python script that ca
 We have often had the case of phishing sites that needs to be added to MISP as an event, and spending time on gathering the relevant attributes.
 With Phish2MISP we have tried to make this as easy as possible.  
 
-Read the blog post at: 
+Read the blog post at:
 https://www.ecrimelabs.com/blog/2020/8/17/phish2misp-v10-released
 
 Configuration of the script is done in the keys file
@@ -27,3 +27,6 @@ make_screenshot = True
 proxies = {
 }
 ```
+
+Requirements:
+phish2MISP makes use CutyCapt(http://cutycapt.sourceforge.net/) for the screendumping part, besides this it automates the collection of attributes.

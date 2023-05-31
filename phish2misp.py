@@ -85,7 +85,7 @@ def collect_phish_artefacts(phish_domain, phish_subdomain, phish_url, phish_targ
 
     print ("\t- Collecting Nameservers for phishing domain: " + phish_domain)
     try:
-        ns = dns.resolver.query(phish_domain,'NS')
+        ns = dns.resolver.resolve(phish_domain,'NS')
         domain_names = []
         for i in ns.response.answer:
             for j in i.items:
